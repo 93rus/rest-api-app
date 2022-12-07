@@ -3,9 +3,9 @@
 one:
   user: one
   post: MyString
-  likes: MyString
+  likes: 1
 
 two:
   user: two
   post: MyString
-  likes: MyString
+  likes: 1
