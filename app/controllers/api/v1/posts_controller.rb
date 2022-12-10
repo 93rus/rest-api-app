@@ -7,7 +7,7 @@ class Api::V1::PostsController < ApplicationController
         render json: @posts
     end
 
-    def update
+    def show
         render json: :post
     end
 
@@ -34,7 +34,7 @@ class Api::V1::PostsController < ApplicationController
             @post.destroy
             render json: { message: 'Публикация удалена' }, status: 200
         else
-            render json: { error: 'Невозможно удалить публикацию' }
+            render json: { error: 'Невозможно удалить публикацию' }, status: 400
         end
 
     end
